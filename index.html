@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card - Frontend Wizards Stage 0</title>
+
+  <!-- Font Awesome CDN -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    
+    <figure class="avatar-section">
+      <img src="profile.jpg" alt="Profile picture of Imah Wisdom" data-testid="test-user-avatar" />
+    </figure>
+
+    <!-- Profile Details -->
+    <div class="profile-details">
+      <h2 data-testid="test-user-name">Imah Wisdom</h2>
+      <p data-testid="test-user-bio">
+        Frontend Developer experienced in building modern web interfaces using React,
+        HTML, and CSS. Passionate about creating smooth and responsive user experiences.
+      </p>
+
+      <p>
+        Current time: <span data-testid="test-user-time" id="current-time"></span>
+      </p>
+
+      <!-- Social Links -->
+      <nav data-testid="test-user-social-links" class="social-links">
+        <a href="https://x.com/wizzy0115?s=21"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="test-user-social-twitter"
+           aria-label="Twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://github.com/ImahWisdom"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="test-user-social-github"
+           aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/imah-wisdom-869349330"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="test-user-social-linkedin"
+           aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
+
+      <!-- Hobbies -->
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Traveling</li>
+          <li>Designing</li>
+        </ul>
+      </section>
+
+      <!-- Dislikes -->
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Messy workspace</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

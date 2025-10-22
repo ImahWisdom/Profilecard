@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Imah Wisdom</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fixed Navbar -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Profile</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Profile</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="contact-panel" data-testid="test-contact-page">
+      <h1>Contact Us</h1>
+      <p>Have a question or want to collaborate? Send a message.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" data-testid="test-contact-name" aria-describedby="error-name" />
+          <small id="error-name" class="error" data-testid="test-contact-error-name"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" data-testid="test-contact-email" aria-describedby="error-email" />
+          <small id="error-email" class="error" data-testid="test-contact-error-email"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" data-testid="test-contact-subject" aria-describedby="error-subject" />
+          <small id="error-subject" class="error" data-testid="test-contact-error-subject"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" data-testid="test-contact-message" aria-describedby="error-message"></textarea>
+          <small id="error-message" class="error" data-testid="test-contact-error-message"></small>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+        <p id="success" class="success" data-testid="test-contact-success" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

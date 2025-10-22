@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Imah Wisdom</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fixed Navbar -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Profile</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Profile</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap" data-testid="test-about-page">
+    <section class="about-hero" data-testid="test-about-bio">
+      <h1>About Me</h1>
+      <p>
+        I'm <strong>Imah Wisdom</strong>, a Frontend Developer. I enjoy building user-friendly interfaces, experimenting with UI patterns, and learning modern JS frameworks.
+      </p>
+    </section>
+
+    <section class="about-goals" data-testid="test-about-goals">
+      <h2>Goals in this program</h2>
+      <ul>
+        <li>Improve my accessibility knowledge</li>
+        <li>Ship more polished UI components</li>
+        <li>Gain confidence in responsive layouts</li>
+      </ul>
+    </section>
+
+    <section class="about-confidence" data-testid="test-about-confidence">
+      <h2>Areas of low confidence</h2>
+      <p>
+        I want to improve on advanced JavaScript patterns and performance optimization; I feel less confident about server-side rendering and complex state management.
+      </p>
+    </section>
+
+    <section class="about-future" data-testid="test-about-future-note">
+      <h2>Note to my future self</h2>
+      <p>
+        Keep practicing, ship small projects weekly, and always write accessible markup.
+      </p>
+    </section>
+
+    <section class="about-extra" data-testid="test-about-extra">
+      <h2>Extra thoughts</h2>
+      <p>
+        This program is a great opportunity to connect with other devs and push my front-end skillset forward.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
